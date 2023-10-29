@@ -8,4 +8,22 @@ body {
 }
 
 
+.custom-data-table .p-datatable-row-odd {
+    background-color: #f0f0f0; /* Gray background for odd rows */
+  }
+  
+  /* Add horizontal lines to separate rows */
+  .custom-data-table .p-datatable-tbody .p-datatable-row {
+    border-bottom: 1px solid #ccc; /* Add a border at the bottom of each row */
+  }
+  
+  /* Style the table header */
+  .custom-data-table .p-datatable-thead th {
+    background-color: #333;
+    color: white;
+  }
 
+
+  .custom-container-class {
+    z-index: 100; /* Add any other styles you need */
+  }

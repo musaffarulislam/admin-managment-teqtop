@@ -36,7 +36,7 @@ export const AsideIcons = ({iconName, title, focus}:propstypes) => {
     };
 
     return (
-        <div className={`my-3 text-white ${focus ? "opacity-100" : "opacity-50"} flex flex-col items-center cursor-pointer hover:bg-white hover:${"bg-opacity-10 rounded-md" }`}>
+        <div className={`my-3 text-white ${focus ? "opacity-100" : "opacity-50"} flex flex-col items-center cursor-pointer hover:bg-white hover:bg-opacity-20 hover:rounded-md`}>
             <div className={`w-7 h-7 p-1 my-1 ${focus && "bg-white bg-opacity-20 rounded-md"}`}>
                 {renderIcon(iconName)}
             </div>
