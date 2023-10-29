@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, Dispatch, AnyAction } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios  from "../../config/axios";
 
 interface UserState {
@@ -34,7 +34,7 @@ export const userSlice = createSlice({
         },
         searchUsers : (state, action) => { 
             const searchText = action.payload.toLowerCase();
-            state.filteredUsers = state.users.filter((user) => {
+            state.filteredUsers = state.users.filter((user: any) => {
                 // Check if the user's 'name' field contains the search text
                 return user.first_name && user.first_name.toLowerCase().includes(searchText);
             });

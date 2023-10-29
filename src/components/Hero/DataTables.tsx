@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import DataTable from 'react-data-table-component';
-import axios from '../../services/config/axios';
 import { AiFillEye } from 'react-icons/ai';
 import { RiPencilLine, RiDeleteBin6Line } from 'react-icons/ri';
 import Swal from 'sweetalert2';
@@ -23,9 +22,9 @@ export const DataTables = () => {
   const columns = [
     {
       name: 'Name',
-      selector: 'name',
+      selector: (row: any) => row.name,
       sortable: true,
-      cell: row => (
+      cell: (row: any) => (
         <div className='flex gap-2'>
           <img src={row.profile_picture} alt="Profile" className='w-5 h-5 rounded-full' />
           {row.first_name} {row.last_name}
@@ -34,28 +33,28 @@ export const DataTables = () => {
     },
     {
       name: 'Email',
-      selector: 'email',
+      selector: (row: any) => row.email,
       sortable: true,
       width: '300px',
     },
     {
       name: 'Phone',
-      selector: 'phone',
+      selector: (row: any) => row.phone,
       sortable: true,
     },
     {
       name: 'Assign Category',
-      selector: 'job',
+      selector: (row: any) => row.job,
       sortable: true,
     },
     {
       name: 'Country',
-      selector: 'country',
+      selector: (row: any) => row.country,
       sortable: true,
     },
     {
       name: 'Action',
-      cell: (row) => (
+      cell: () => (
         <div className='flex justify-between gap-2'>
           <button className='p-1  border-2 border-yellow-100 rounded-md hover:bg-yellow-200' onClick={() => handleButtons()}><AiFillEye className="w-5 h-5  text-yellow-400" /></button>
           <button className='p-1 border-2 border-emerald-100 rounded-md hover:bg-emerald-200' onClick={() => handleButtons()}><RiPencilLine className="w-5 h-5  text-emerald-400" /></button>

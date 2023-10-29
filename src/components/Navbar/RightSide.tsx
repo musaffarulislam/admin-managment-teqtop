@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdOutlineHorizontalRule } from 'react-icons/md';
 import { VscBell } from 'react-icons/vsc';
 import Swal from 'sweetalert2';

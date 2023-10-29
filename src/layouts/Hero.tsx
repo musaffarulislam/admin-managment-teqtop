@@ -1,4 +1,3 @@
-import React from 'react'
 import { Aside } from '../components/Hero/Aside'
 import { Main } from '../components/Hero/Main'
 

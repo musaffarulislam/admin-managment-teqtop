@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiSolidHomeSmile } from 'react-icons/bi';
 import { RiUser3Fill, RiMapPinUserLine, RiBuildingFill, RiSettings5Fill } from 'react-icons/ri';
 import { PiUsersFill } from 'react-icons/pi';

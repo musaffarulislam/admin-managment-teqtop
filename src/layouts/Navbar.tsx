@@ -1,4 +1,3 @@
-import React from 'react'
 import { LeftSide } from '../components/Navbar/LeftSide';
 import { RightSide } from '../components/Navbar/RightSide';
 

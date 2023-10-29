@@ -1,4 +1,3 @@
-import React from 'react'
 import { AsideIcons } from './AsideIcons';
 
 export const Aside = () => {

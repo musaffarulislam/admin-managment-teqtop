@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const LeftSide = () => {
     return (
         <div className='flex font-bold items-center'>
