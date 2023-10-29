@@ -4,7 +4,7 @@ import { Hero } from '../layouts/Hero'
 
 export const Home = () => {
   return (
-    <div className='bg-background'>
+    <div className='h-screen bg-background'>
         <Navbar />
         <Hero />
     </div>
